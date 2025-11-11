@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблицы</title> <!-- Название страницы-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Таблицы</h1> <!-- Название страницы-->
+<hr>
+<nav> <!-- Навигация начало-->
+    <h2>Список практических работ:</h2>
+<ul>
+    <li><a href="Page1.html">Понятия требований, классификация, уровни требований.</a></li>
+    <li><a href="Page2.html">Современные принципы и методы разработки программных приложений.</a></li>
+    <li><a href="Page3.html">Сематические теги</a></li>
+    <li><a href="Page4.html">Стили CSS</a></li>
+    <li><a href="Page5.html">Таблицы</a></li>
+</ul>
+ <a href="index.html">Главная страница</a></li>
+ </nav> <!--Навигация конец-->
+<hr>
+</body>
+
+<!-- Здесь начинается текст-->
+<main>
+<h2>Создание таблицы</h2>
+Таблицы - одна из важных вещей в HTML, ведь без неё не будет удобно читать информацию или придется
+вставлять изображение таблицы. С помощью <code>&lt;table&gt;</code> мы сможем быстро создать таблицу и 
+изменять её значения как захотим!
+
+<p><b>Структура таблицы:</b></p>
+<img src="https://labs-org.ru/wp-content/uploads/2016/11/1-46.png">
+
+<hr>
+<b>Пример: таблицы в HTML:</b>
+<table>
+    <tr>
+        <td>Данные 1</td>
+        <td>Данные 2</td>
+        <td>Данные 3</td>
+    </tr>
+    <tr>
+        <td>89</td>
+        <td>90</td>
+        <td>432</td>
+    </tr>
+    <tr>
+        <td>567</td>
+        <td>54</td>
+        <td>33</td>
+    </tr>
+</table>
+<p><i>Простая таблица 3x3</i></p>
+
+<b>Пример таблицы с colspan:</b>
+<table>
+    <tr>
+        <td>Данные 1</td>
+        <td colspan="2"> Данные 2</td>
+    </tr>
+    <tr>
+        <td>89</td>
+        <td>90</td>
+        <td>432</td>
+    </tr>
+    <tr>
+        <td>567</td>
+        <td>54</td>
+        <td>33</td>
+    </tr>
+</table>
+<b>Пример таблицы с rowspan:</b>
+<table>
+<tr>
+  <td rowspan="2">Данные 1</td>
+  <td>Данные 2</td>
+</tr>
+<tr>
+  <td>Данные 3</td>
+</tr>
+</table>
+<hr>
+
+<h2>Атрибуты тега table</h2>
+
+
+
+
+<table>
+<tbody><tr>
+<td><code>align</code></td>
+<td>
+<code>left</code> — таблица влево;<br>
+<code>center</code> – табл. по центру;<br>
+<code>right</code> — табл. вправо.
+</td>
+</tr>
+<tr>
+<td><code>width</code></td>
+<td>
+<code>400</code><br>
+<code>50%</code>
+</td>
+</tr>
+<tr>
+<td><code>bоrdеr</code></td>
+<td> ширина</td>
+</tr>
+<tr>
+<td><code>bordercolor</code></td>
+<td> цвета рамки</td>
+</tr>
+<tr>
+<td><code>сеllspacing</code></td>
+<td> ширина грани рамки</td>
+</tr>
+<tr>
+<td><code>cellpadding</code></td>
+<td> внутреннее расстояние до рамки</td>
+</tr>
+<tr>
+<td><code>bgсоlоr</code></td>
+<td>
+ <code>Цвет</code><br>
+ <code>#rrggbb</code>
+</td>
+</tr>
+<tr>
+<td><code>bасkground</code></td>
+<td> <code>файл </code>(фон таблицы) </td>
+</tr>
+</tbody></table>
+
+
+<h3>Атрибуты тега tr</h3>
+
+
+<table>
+<tbody><tr>
+<td><code>align</code></td>
+<td><code>left</code>, <code>center</code>, <code>right</code></td>
+<td>выравнивание по горизонтали</td>
+</tr>
+<tr>
+<td><code>valign</code></td>
+<td><code>top</code>, <code>middle</code>, <code>bottom</code>, <code>baseline</code></td>
+<td>выравнивание по вертикали</td>
+</tr>
+<tr>
+<td><code>bgcolor</code></td>
+<td>цвет</td>
+<td>задний фон</td>
+</tr>
+<tr>
+<td><code>bordercolor</code></td>
+<td>цвет</td>
+<td>цвет границы</td>
+</tr>
+</tbody></table>
+
+
+<h3>Атрибут тега Td/Th</h3>
+<table>
+<tbody><tr>
+<td><code>align</code></td>
+<td><code>left</code>, <code>center</code>, <code>right</code></td>
+<td>выравнивание по горизонтали</td>
+</tr>
+<tr>
+<td><code>valign</code></td>
+<td><code>top</code>, <code>middle</code>, <code>bottom</code>, <code>baseline</code></td>
+<td>выравнивание по вертикали</td>
+</tr>
+<tr>
+<td><code>width</code></td>
+<td>число или процент</td>
+<td>ширина ячейки</td>
+</tr>
+<tr>
+<td><code>bgcolor</code></td>
+<td>цвет</td>
+<td>цвет фона</td>
+</tr>
+<tr>
+<td><code>background</code></td>
+<td>файл</td>
+<td>файл фона</td>
+</tr>
+<tr>
+<td><code>bordercolor</code></td>
+<td>цвет</td>
+<td>цвет границы</td>
+</tr>
+<tr>
+<td><code>nowrap</code></td>
+<td></td>
+<td>заставляет текст внутри ячейки отображаться без переносов, одной сплошной строкой</td>
+</tr>
+</tbody></table>
+
+<p></p>Тег <code>caption</code> заголовка таблицы может иметь атрибут, определяющий расположение заголовка — <code>align</code> — со следующими значениями:
+<code>top</code> — заголовок над таблицей,
+<code>bottom</code> — заголовок под таблицей,
+<code>left</code> — заголовок вверху и выровнен влево,
+<code>right</code> — заголовок вверху и выровнен вправо. К сожалению не все значения «работают» во всех браузерах.
+
+<hr>
+
+<h4>Примеры кода rowspan и colspan:</h4>
+<code>
+    <table>
+<tr>
+  <td colspan="2">Данные 1</td>
+</tr>
+<tr>
+  <td>Данные 2</td>
+  <td>Данные 3</td>
+</tr>
+</table>
+</code>
+<p><i>Таблица с применением colspan</i></p>
+
+<code>
+<table>
+<tr>
+  <td rowspan="2">Данные 1</td>
+  <td>Данные 2</td>
+</tr>
+<tr>
+  <td>Данные 3</td>
+</tr>
+</table>
+</code>
+<p><i>Таблица с применением rowspan</i></p>
+</main>
+
+
+
+
+
+</html>
