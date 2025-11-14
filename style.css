@@ -1,5 +1,12 @@
+:root{
+--main: #f0f8ff;
+--main-text:#0059b3;
+--gray: #4b4b4b;
+  
+}
+
 body {
-  background: #f0f8ff;
+  background: var(--main);
   color: #222;
   font-family: Arial, sans-serif;
   margin: 0;
@@ -8,7 +15,7 @@ body {
 }
 
 h1, h2, h3 {
-  color: #0059b3;
+  color: var(--main-text);
 }
 
 a {
@@ -84,4 +91,33 @@ blockquote {
   padding: 1rem;
   margin: 1rem 0;
   border-radius: 0 8px 8px 0;
+}
+
+nav a:hover {
+  color: var(--main-text);
+}
+
+nav a:focus {
+  color: #4b4b4b
+}
+
+.breadcrumb li::after {
+content: "›";
+margin: 0 8px;
+color: var(--main-text);
+}
+
+.breadcrumb li:last-child::after {
+content: none;
+}
+
+.breadcrumb .active {
+font-weight: bold;
+color: #222;
+pointer-events: none;
+}
+
+.breadcrumb a:hover {
+text-decoration: underline;
+color: #4b4b4b;
 }
